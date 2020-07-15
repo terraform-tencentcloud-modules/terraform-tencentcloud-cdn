@@ -1,9 +1,5 @@
-variable "region" {
-  default = ""
-}
-
 provider "tencentcloud" {
-  region = var.region
+  region = "ap-guangzhou"
 }
 
 module "cdn" {
