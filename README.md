@@ -3,7 +3,7 @@
 
 ## terraform-tencentcloud-cdn
 
-A terraform module used to create CDN and CDN domain.
+A terraform module used to create CDN domain.
 
 The following resources are included.
 
@@ -23,7 +23,7 @@ module "cdn" {
 
 ## Conditional Creation
 
-This module can create CDN and CDN domain.
+This module can create CDN domain.
 
 ## Inputs
 

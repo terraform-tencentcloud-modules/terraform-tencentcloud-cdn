@@ -1,4 +1,4 @@
-# VPC Module Example
+# CDN Module Example
 
 This module will create new CDN domain.
 
