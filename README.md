@@ -29,6 +29,7 @@ This module can create CDN and CDN domain.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
+| region | TencentCloud region to launch resources. | string |  | no 
 | domain | Name of the acceleration domain. | string | "" | no 
 | service_type | Service type of acceleration domain name. | string | ""  | no 
 | https_switch | HTTPS configuration switch. | string| "off" | no |
