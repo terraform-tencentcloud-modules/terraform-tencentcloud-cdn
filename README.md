@@ -29,13 +29,23 @@ This module can create CDN domain.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| region | TencentCloud region to launch resources. | string |  | no 
-| domain | Name of the acceleration domain. | string | "" | no 
-| service_type | Service type of acceleration domain name. | string | ""  | no 
+| domain | Name of the acceleration domain. | string | "" | yes 
+| service_type | Service type of acceleration domain name. | string | ""  | yes 
+| full_url_cache | Whether to enable full-path cache. | bool | true | no 
+| area | Domain name acceleration region. | string | null | no 
+| origin_type | Master origin server type.  | string| "" | yes|
+| origin_list | Master origin server list. Valid values can be ip or domain name. When modifying the origin server, you need to enter the corresponding `origin_type`.  | list(string)| [] | yes |
+| server_name | Host header used when accessing the master origin server. | string | null | no 
+| cos_private_access | When OriginType is COS, you can specify if access to private buckets is allowed. | string | off | no 
+| origin_pull_protocol | Origin-pull protocol configuration. | string | http | no 
 | https_switch | HTTPS configuration switch. | string| "off" | no |
-| origin_type | Master origin server type.  | string| "" | no|
-| origin_list | Master origin server list. Valid values can be ip or domain name. When modifying the origin server, you need to enter the corresponding `origin_type`.  | list(string)| [] | no |
-
+| http2_switch | HTTP2 configuration switch. | string | off | no 
+| ocsp_stapling_switch | OCSP configuration switch. | string | off | no 
+| spdy_switch | SPDY configuration switch. | string | off | no 
+| verify_client | Client certificate authentication feature. | string | off | no 
+| server_certificate_config | Server certificate configuration information. | list | [] | no 
+| client_certificate_config | Client certificate configuration information. | list | [] | no 
+| tags | Tags of cdn domain. | map | null | no 
 ## Outputs
 
 | Name | Description |
