@@ -1,6 +1,6 @@
 # CDN Module Example
 
-This module will create new CDN domain.
+This module can create new CDN domain.
 
 ## Usage
 

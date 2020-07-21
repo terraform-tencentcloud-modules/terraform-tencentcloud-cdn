@@ -41,7 +41,7 @@ This module can create CDN domain.
 | https_switch | HTTPS configuration switch. | string| "off" | no |
 | http2_switch | HTTP2 configuration switch. | string | off | no 
 | ocsp_stapling_switch | OCSP configuration switch. | string | off | no 
-| spdy_switch | Spdy configuration switch. | string | off | no 
+| spdy_switch | SPDY configuration switch. | string | off | no 
 | verify_client | Client certificate authentication feature. | string | off | no 
 | server_certificate_config | Server certificate configuration information. | list | [] | no 
 | client_certificate_config | Client certificate configuration information. | list | [] | no 
