@@ -16,4 +16,3 @@ output "status" {
   description = "Acceleration service status."
   value       = tencentcloud_cdn_domain.default.*.status
 }
-
