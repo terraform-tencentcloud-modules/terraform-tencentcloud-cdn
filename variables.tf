@@ -52,12 +52,6 @@ variable "origin_type" {
   default     = ""
 }
 
-variable "create_cos" {
-  description = "Controls if COS should be created (it be used at cos origin_type)"
-  type        = bool
-  default     = false
-}
-
 variable "origin_list" {
   description = "Master origin server list."
   type        = list(string)
