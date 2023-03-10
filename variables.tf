@@ -32,7 +32,7 @@ variable "follow_redirect_switch" {
 }
 
 variable "range_origin_switch" {
-  description = "Sharding back to source configuration switch"
+  description = "Sharding back to source configuration switch."
   type        = string
   default     = "on"
 }
@@ -131,15 +131,6 @@ variable "cache_key" {
   description = "Cache key configuration (Ignore Query String configuration)"
   type        = any
   default     = {}
-}
-
-/*
-* DNSPod
-*/
-variable "update_dnspod" {
-  description = "Update the cname to dnspod."
-  type        = bool
-  default     = false
 }
 
 /*

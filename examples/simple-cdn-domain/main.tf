@@ -32,7 +32,7 @@ module "ip_cdn" {
   }
 
   origin_type            = "ip"
-  origin_list            = ["${var.ip}"]
+  origin_list            = ["${local.ip}"]
 
   tags = {
     hello = "world"
@@ -48,7 +48,7 @@ module "ip_cdn" {
 * origin_type = "cos"
 */
 data "tencentcloud_cos_buckets" "cos_buckets" {
-  bucket_prefix      = var.cos_bucket
+  bucket_prefix      = local.cos_bucket
   result_output_file = "./path/cos_bucket.json"
 }
 
